@@ -1,13 +1,14 @@
 import javassist.*;
+import source.Valveimpl;
 import sun.misc.BASE64Encoder;
 
 
 public class toBase64 {
     public static void main(String[] args) throws Exception{
         ClassPool aDefault = ClassPool.getDefault();
-        //CtClass ctClass = aDefault.get(Valveimpl.class.getName());
-        CtClass ctClass = aDefault.get(addValve.class.getName());
-        //CtClass ctClass = aDefault.get(addMemShells.class.getName());
+        CtClass ctClass = aDefault.get(Valveimpl.class.getName());
+        //CtClass ctClass = aDefault.get(source.addValve.class.getName());
+        //CtClass ctClass = aDefault.get(shiroInject.class.getName());
         byte[] bytes = ctClass.toBytecode();
         String encode = new BASE64Encoder().encode(bytes);
         System.out.println(encode);

@@ -31,7 +31,7 @@
 
 ![image-20211029105735136](README.assets/image-20211029105735136.png)
 
-* 修改完成之后需要一步一步将java文件重新变成字节码然后逐渐替换`addValve`类和`addMemShell`类。
+* 修改完成之后需要一步一步将java文件重新变成字节码然后逐渐替换`source.addValve`类和`addMemShell`类。
 
 ![image-20211029105940614](README.assets/image-20211029105940614.png)
 
