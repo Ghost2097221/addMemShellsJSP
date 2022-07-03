@@ -53,8 +53,6 @@ public class Main {
             objectOutputStream.writeObject(templates);
             String encode3 = Utility.encode(outputStream.toByteArray(),false);
             System.out.println("获取的Template对象(序列化之后的)是："+encode3);
-
-
         }catch (Exception e){
             e.printStackTrace();
         }
